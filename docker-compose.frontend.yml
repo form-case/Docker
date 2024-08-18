@@ -108,7 +108,7 @@ services:
           - nginx.internal
 
   enketo_express:
-    image: formcase/enketo:v2
+    image: formcase/enketo-express:latest
     env_file:
       - ../kobo-env/envfile.txt
     restart: always

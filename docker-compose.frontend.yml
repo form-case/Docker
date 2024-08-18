@@ -113,11 +113,12 @@ services:
       - ../kobo-env/envfile.txt
     restart: always
     volumes:
-      - ../kobo-env/enketo_express/config.json:/srv/src/enketo_express/config/config.json
+      - ../kobo-env/enketo_express/config.json:/srv/src/enketo/packages/enketo-express/config/config.json
     networks:
       kobo-fe-network:
         aliases:
           - enketo_express
+          - enketo-express
           - enketo_express.internal
 
 networks:
